@@ -1,0 +1,17 @@
+:root{
+    --bs-myblack : #171b1f;
+    --bs-textcolor: white:
+}
+
+
+.navbar{
+    background-color: var(--bs-myblack);
+}
+
+.navbar-nav > a{
+    color: white;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
