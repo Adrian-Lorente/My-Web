@@ -2,7 +2,7 @@
     <footer class="text-center footer fixed-bottom">
     <!-- Grid container -->
         <!-- Section: Social media -->
-        <section class="mb-4">
+        <section class="m-0 p-0">
         <!-- Twitter -->
         <a
             class="btn btn-link btn-floating btn-lg m-1"
@@ -32,25 +32,10 @@
         <!-- Section: Social media -->
 
     <!-- Copyright -->
-    <div class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center text-white">
         © 2020 Copyright:
         <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
-</footer>
+    </footer>
 </template>
-
-
-<style scoped>
-.footer{
-    background-color: #000;
-    padding: 0px;
-}
-
-.mb-4{
-    padding: 0px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-
-}
-</style>

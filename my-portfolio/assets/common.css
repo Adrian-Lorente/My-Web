@@ -2,7 +2,7 @@
     --bg-myblack : #171b1f;
     --bg-inner-content: #21272e;
     --textcolor: white;
-    --title-color: #6096B4;
+    --title-color: white;
     --margin-topbot: 20px;
     --def-pad:40px;
     --my-font:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -22,6 +22,9 @@ html, body, #__nuxt{
 .navbar-collapse{
     justify-content: center;
 }
+.footer{
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 section{
     margin-top: var(--margin-topbot);
@@ -39,6 +42,8 @@ a {
 
 .outerBorder{
     background-color: var(--bg-myblack);
+    /* background-image: url("/assets/cherryBranch.png") ; */
+    background-repeat: no-repeat;
 }
 
 .h1{
