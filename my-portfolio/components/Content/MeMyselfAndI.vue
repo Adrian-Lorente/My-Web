@@ -49,13 +49,45 @@
 }
 
 .my-picture{
-    background: linear-gradient(white, white) no-repeat center/4px 100%;
+    background: linear-gradient(#F9F54B, #F9F54B) no-repeat center/2px 100%;
+    position: relative;
+}
+
+.my-picture::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(2px);
+    background: linear-gradient(#fffc43, #fffc43) no-repeat center/5px 100%;
+    height: inherit;
+    z-index: 0;
 }
 
 .circle{
     width: 128px;
     height: 128px;
-    background-color: white;
+    background-color: #F9F54B;
+    border-radius: 50%;
+    position: relative;
+    /* box-shadow: 0 0 0.5em 0 #F9F54B; */
+    z-index: 1;
+}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 128px;
+    height: 128px;
+    filter: blur(2px);
+    background-color: #F9F54B;
+    z-index: -1;
     border-radius: 50%;
 }
 
