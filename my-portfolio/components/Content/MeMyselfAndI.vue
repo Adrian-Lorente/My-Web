@@ -95,3 +95,15 @@
     max-width: 800px;
 }
 </style>
+
+<script>
+export default {
+    props: ['MeMyselfAndI'],
+    setup () {
+        const MeMyselfAndI = inject("MeMyselfAndI")
+        return {
+            MeMyselfAndI,
+        }
+    },
+}
+</script>
