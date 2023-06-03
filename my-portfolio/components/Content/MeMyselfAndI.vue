@@ -1,6 +1,6 @@
 <template>
         
-        <!-- This section will contain an image centered, dunno what yet -->
+        <!-- Mob pic and link to my GitHub -->
         <section class="my-picture d-flex justify-content-center">
             <div class="circle d-flex justify-content-center align-items-center">
                 <a href="https://github.com/Adrian-Lorente">
@@ -17,13 +17,10 @@
                 </div>
             </div>
             <p align="center" class="text" id="my-text">
-                I'm a Computer Science and Engineering student at UC3M, building this website to practice, 
+                I'm currently a Computer Science and Engineering student at UC3M, building this website to practice, 
                 trying out new technology and being creative in the proccess (or that's the intention at least). 
-                This will be a long-term project, which I'll be working on whenever I have time (not too much theese days, pretty busy with uni).
+                This will be a long-term project, which I'll be working on whenever I have time.
                 The final goal is to make this site kind of my personal space, where I share my hobbies, interests and proyects. 
-                <br>
-                <br>
-                I hope you find this interesting :D
             </p>
             </section>
 </template>
@@ -61,7 +58,7 @@
     left: 0;
     right: 0;
     filter: blur(2px);
-    background: linear-gradient(#fffc43, #fffc43) no-repeat center/5px 100%;
+    background: linear-gradient(#fffc43, #fffc43) no-repeat center/3px 100%;
     height: inherit;
     z-index: 0;
 }
@@ -95,15 +92,3 @@
     max-width: 800px;
 }
 </style>
-
-<script>
-export default {
-    props: ['MeMyselfAndI'],
-    setup () {
-        const MeMyselfAndI = inject("MeMyselfAndI")
-        return {
-            MeMyselfAndI,
-        }
-    },
-}
-</script>

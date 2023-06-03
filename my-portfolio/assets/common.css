@@ -5,7 +5,8 @@
     --title-color: white;
     --margin-topbot: 20px;
     --def-pad:40px;
-    --my-font:Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    --my-font:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    --my-font-p-size: 1.2rem;
 }
 html, body, #__nuxt{
     width: 100%;
@@ -32,12 +33,10 @@ section{
     padding: var(--def-pad);
 }
 
-a {
-    color: var(--textcolor) !important;
-}
-
 .text{
     font-family: var(--my-font);
+    font-size: var(--my-font-p-size);
+    color: var(--textcolor);
 }
 
 .outerBorder{
@@ -50,6 +49,7 @@ a {
     text-shadow: 0px 8px 16px rgb(0 0 0 / 0.6);
     color: var(--title-color);
 }
+
 
 .innerContent{
     color: white;
