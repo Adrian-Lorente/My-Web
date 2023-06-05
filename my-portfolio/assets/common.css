@@ -14,6 +14,7 @@ html, body, #__nuxt{
     position: absolute;
     inset: 0px auto auto auto;
     background-color: var(--bg-myblack);
+    overflow-x: hidden;
 }
 
 .navbar{

@@ -5,8 +5,12 @@
         <!-- NavBar is fixed and static component -->
         <NavBar @change-component="function (comp) { myComponent = comp }" />
         
-        <!-- This component is dynamic -->
-        <component :is='myComponent' />
+        <transition name="switch">
+        <!-- A div wrapping the element is needed to make transitions work. Else, I'd need to use <transition-group> -->
+        <div :key="myComponent.__file">
+            <component :is='myComponent' />
+        </div>
+        </transition>
         
         <!-- Footer is fixed and static component -->
         <Footer />
@@ -26,3 +30,24 @@
         }
     }
 </script>
+
+<style scoped>
+.switch-enter-from{
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+.switch-enter-active{
+    transition-delay: 1s;
+    transition:  4s ease;
+}
+
+.switch-leave-to{
+    transform: translateX(-100%);
+}
+
+.switch-leave-active{
+    transition: 1s ease;
+}
+
+</style>

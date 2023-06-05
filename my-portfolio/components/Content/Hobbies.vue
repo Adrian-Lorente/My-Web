@@ -1,3 +1,3 @@
 <template>
-    <p>Nothing here yet!</p>
+    <p class="text">Nothing here yet!</p>
 </template>
