@@ -8,19 +8,16 @@
                 </a>
             </div>
         </section>
-        
+
         <!-- Writing section -->
         <section class="container innerContent">
             <div class="container fit-content d-flex justify-content-center">
                 <div class="h1">
-                    So.. who am I?
+                    Ye who enter here, be welcomed
                 </div>
             </div>
             <p align="center" class="text" id="my-text">
-                I'm currently a Computer Science and Engineering student at UC3M, building this website to practice, 
-                trying out new technology and being creative in the proccess (or that's the intention at least). 
-                This will be a long-term project, which I'll be working on whenever I have time.
-                The final goal is to make this site kind of my personal space, where I share my hobbies, interests and proyects. 
+                I'm creating this site as my personal space, where I share my hobbies, interests and proyects.
             </p>
             </section>
 </template>
@@ -28,8 +25,8 @@
 <style scoped>
 .h1{
     text-align: center;
-    /* width: 100%; */
     width: 100%;
+    /* font-size: 1.8rem; */
     max-width: fit-content;
     border-right: 3px solid;
     overflow: hidden;

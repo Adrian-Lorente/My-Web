@@ -5,15 +5,15 @@
         <!-- NavBar is fixed and static component -->
         <NavBar @change-component="function (comp) { myComponent = comp }" />
         
-        <transition name="switch">
+        <!-- <transition name="switch"> -->
         <!-- A div wrapping the element is needed to make transitions work. Else, I'd need to use <transition-group> -->
-        <div :key="myComponent.__file">
+        <div :key="myComponent.__file" style="overflow: auto;">
             <component :is='myComponent' />
         </div>
-        </transition>
+        <!-- </transition> -->
         
         <!-- Footer is fixed and static component -->
-        <Footer />
+        <!-- <Footer /> -->
     
     </div>
 </template>
@@ -31,8 +31,11 @@
     }
 </script>
 
+
+
+<!-- SECTION FOR TRANSITIONS. CURRENTLY DISABLED -->
 <style scoped>
-.switch-enter-from{
+/* .switch-enter-from{
     transform: translateX(200%);
     opacity: 0;
 }
@@ -43,11 +46,10 @@
 }
 
 .switch-leave-to{
-    transform: translateX(-100%);
+    transform: translateX(-150%);
 }
 
 .switch-leave-active{
     transition: 1s ease;
-}
-
+} */
 </style>
