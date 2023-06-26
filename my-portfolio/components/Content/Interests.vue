@@ -5,18 +5,18 @@
                 Manga
             </div>
             <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
-                <figure class="left-arrow">
-                    hola
-                </figure>
                 
+                <LeftArrow @press=" function myfunc () { let item = mangas.shift(); mangas.push(item);}" />
                 <!-- Manga carousel -->
-                <figure class="gallery-item" v-for="manga in mangas">
-                        <a :href="manga[2]"><img :src="manga[0]" :alt="manga[1]"></a>
-                </figure>
-
-                <figure class="right-arrow">
-                    adios
-                </figure>
+                <!-- <figure class="gallery-item" v-for="manga in mangas">
+                        <a :href="manga[2]"><img class ="gallery-item" :src="manga[0]" :alt="manga[1]"></a>
+                </figure> -->
+                <a :href="mangas[0][2]"><img class ="gallery-item-0" :src="mangas[0][0]" :alt="mangas[0][1]"></a>
+                <a :href="mangas[1][2]"><img class ="gallery-item-1" :src="mangas[1][0]" :alt="mangas[1][1]"></a>
+                <a :href="mangas[2][2]"><img class ="gallery-item-2" :src="mangas[2][0]" :alt="mangas[2][1]"></a>
+                <!-- <a :href="mangas[3][2]"><img class ="gallery-item-3" :src="mangas[3][0]" :alt="mangas[3][1]"></a>
+                <a :href="mangas[4][2]"><img class ="gallery-item-4" :src="mangas[4][0]" :alt="mangas[4][1]"></a> -->
+                <RightArrow @press=" function myfunc () { let item = mangas.pop(); mangas.unshift(item);}" />
             </div>
             
         </div>
@@ -33,9 +33,9 @@
                 </figure>
                 
                 <!-- Anime carousel -->
-                <figure class="gallery-item" v-for="manga in mangas">
+                <!-- <figure class="gallery-item" v-for="manga in mangas">
                         <a :href="manga[2]"><img :src="manga[0]" :alt="manga[1]"></a>
-                </figure>
+                </figure> -->
 
                 <figure class="right-arrow">
                     adios
@@ -65,6 +65,9 @@ export default {
 <style scoped>
 .innerContent{
     max-width: 1000px;
+}
+.gallery-item{
+    transition: 0.5s ease-in-out;
 }
 
 img{

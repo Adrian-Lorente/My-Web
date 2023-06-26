@@ -53,7 +53,6 @@ button , button:hover{
   color: white;
   border: 0px;
   position: relative;
-
 }
 
 button::after, .selected::after{
