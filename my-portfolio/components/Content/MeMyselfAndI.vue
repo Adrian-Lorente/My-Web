@@ -2,24 +2,40 @@
         
         <!-- Mob pic and link to my GitHub -->
         <section class="my-picture d-flex justify-content-center">
-            <div class="circle d-flex justify-content-center align-items-center">
-                <a href="https://github.com/Adrian-Lorente">
-                <img src="~/assets/mob.jpg" alt="mobu" style="width: 124px; height: 124px; border-radius: 50%;">
-                </a>
-            </div>
+                
+                <div class="circle d-flex justify-content-center align-items-center">
+                        
+                        <a href="https://github.com/Adrian-Lorente">
+                            
+                            <img src="~/assets/images/mob.jpg" 
+                                 alt="mobu" 
+                                 style="width: 124px; 
+                                        height: 124px; 
+                                        border-radius: 50%;">
+                        
+                        </a>
+                
+                </div>
+        
         </section>
 
         <!-- Writing section -->
         <section class="container innerContent">
+
             <div class="container fit-content d-flex justify-content-center">
+                
                 <div class="h1">
                     Ye who enter here, be welcomed
                 </div>
+
             </div>
+
             <p align="center" class="text" id="my-text">
                 I'm creating this site as my personal space, where I share my hobbies, interests and proyects.
             </p>
-            </section>
+            
+        </section>
+
 </template>
 
 <style scoped>
