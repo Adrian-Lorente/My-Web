@@ -10,19 +10,22 @@
         
                         <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
                             
-                                <LeftArrow @press=" function myfunc () { let item = manga.shift(); manga.push(item);}" />
+                                <LeftArrow @press=" function myfunc () { let item = manga.pop(); manga.unshift(item); }" />
                                 
                                 <!-- Manga carousel -->
                                 <div v-for="item in manga">
+                                    
+                                    <div :class = "[ manga.indexOf(item) >= 3 ? 'item-0' : 'item-' + (manga.indexOf(item) + 1) ]">
+                                    
+                                        <a :href="item.link">
+                                    
+                                            <img :src="item.image" 
+                                                :alt="item.alt">
+                                    
+                                        </a>
                                 
-                                    <a :href="item.link">
-                                
-                                        <img :class ="'gallery-item-' + manga.indexOf(item)"  
-                                             :src="item.image" 
-                                             :alt="item.alt">
-                                
-                                    </a>
-                                
+                                    </div>
+
                                 </div>
 
                                 <!-- ANOTHER POSSIBLE SOLUTION TO SHOWING ONLY X NUMBER OF ITEMS IN THE CAROUSEL (BUT CAN'T ANIMATE THE TRANSITIONS) -->
@@ -38,7 +41,7 @@
                             
                                 </div> -->
 
-                                <RightArrow @press=" function myfunc () { let item = manga.pop(); manga.unshift(item);}" />
+                                <RightArrow @press=" function myfunc () { let item = manga.shift(); manga.push(item); }" />
 
                         </div>
                     
@@ -99,20 +102,49 @@ export default {
     max-width: 1000px;
 }
 
-.gallery-item{
-    transition: 0.5s ease-in-out;
+.container > * {
+    max-width: 100%;
+
+}
+
+.item-0 > *, .item-1 > *, .item-2 > *, .item-3 > *{
+    transition: transform .3s ease;
+}
+
+.item-0 {
+    display: none;
+}
+
+.item-1 {
+    opacity: 50%;
+    transform: translateX(35%);
+    position: relative;
+    z-index: 1;
+}
+
+.item-3 {
+    opacity: 50%;
+    position: relative;
+    transform: translateX(-35%);
+    z-index: 1;
+}
+
+.item-2 {
+    z-index: 3;
+    transform: scale(1.1);
+    position: relative;
 }
 
 img{
-    width: 200px;
-    height: 300px;
+    width: 260px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8%;
     transition: all .3s ease;
 }
 
 img:hover{
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
 
 </style>
