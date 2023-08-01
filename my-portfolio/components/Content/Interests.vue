@@ -8,14 +8,18 @@
                             Manga
                         </div>
         
-                        <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
+                        <div class="container d-flex align-items-center justify-content-between">
                             
-                                <LeftArrow @press=" function myfunc () { let item = manga.pop(); manga.unshift(item); }" />
+                                <LeftArrow @press=" function myfunc () { offset == 0 ? 
+                                                                         offset = manga_lenth - 1 : 
+                                                                         offset = (offset - 1) % manga_lenth ; }" />
                                 
                                 <!-- Manga carousel -->
-                                <div v-for="item in manga">
+                                <div class="carousel">
                                     
-                                    <div :class = "[ manga.indexOf(item) >= 3 ? 'item-0' : 'item-' + (manga.indexOf(item) + 1) ]">
+                                    <div class="carousel-item" v-for="item in manga" :class = "[  item == manga[offset] ? 'item-1' : // offset is alwas left item in carousel 
+                                                      item == manga[(offset + 1) % manga_lenth] ? 'item-2' :  // offset + 1 mod(lenth) is always center item in carousel
+                                                      item == manga[(offset + 2) % manga_lenth] ? 'item-3' : 'item-0']"> 
                                     
                                         <a :href="item.link">
                                     
@@ -28,20 +32,7 @@
 
                                 </div>
 
-                                <!-- ANOTHER POSSIBLE SOLUTION TO SHOWING ONLY X NUMBER OF ITEMS IN THE CAROUSEL (BUT CAN'T ANIMATE THE TRANSITIONS) -->
-                                <!-- <div class="carousel" v-for="item_index in 3">
-                                
-                                <a :href="manga[item_index].link">
-                            
-                                    <img class ="gallery-item-0" 
-                                         :src="manga[item_index].image" 
-                                         :alt="manga[item_index].alt">
-                            
-                                </a>
-                            
-                                </div> -->
-
-                                <RightArrow @press=" function myfunc () { let item = manga.shift(); manga.push(item); }" />
+                                <RightArrow @press=" function myfunc () { offset = (offset + 1) % manga_lenth ; }" />
 
                         </div>
                     
@@ -56,7 +47,7 @@
                         <div class="h1">
                             Anime
                         </div>
-                        <div class="container d-flex flex-row align-items-center justify-content-center gap-3">
+                        <div class="container d-flex flex-row align-items-center justify-content-center gap-3 p-0">
                             <figure class="left-arrow">
                                 hola
                             </figure>
@@ -90,7 +81,9 @@ export default {
     data(){
         return {
             manga,
-            anime: null
+            anime: null,
+            offset: 0,
+            manga_lenth: manga.length
         }
     }
 }
@@ -107,36 +100,55 @@ export default {
 
 }
 
-.item-0 > *, .item-1 > *, .item-2 > *, .item-3 > *{
-    transition: transform .3s ease;
+.carousel {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.carousel-item {
+    width: fit-content;
+}
+
+.item-1, .item-2, .item-3, .item-0 {
+    transition: all .3s ease;
+    box-shadow:0px 15px 10px rgba(0,0,0,0.25);
 }
 
 .item-0 {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-1, .item-3 {
+    z-index: 0;
+    opacity: 0.5;
+    top: 0;
+    display: inline;
+    position: absolute;
+    pointer-events: none;
 }
 
 .item-1 {
-    opacity: 50%;
-    transform: translateX(35%);
+    transform: translateX(100%) rotate3d(0, 0.3, -0.1, 20deg);
+}
+
+.item-2 {
+    display: inline;
+    transform: scale(1.1);
+    opacity: 100%;
     position: relative;
     z-index: 1;
 }
 
 .item-3 {
-    opacity: 50%;
-    position: relative;
-    transform: translateX(-35%);
-    z-index: 1;
-}
-
-.item-2 {
-    z-index: 3;
-    transform: scale(1.1);
-    position: relative;
+    transform: translateX(-100%) rotate3d(0, 0.3, -0.1, -20deg);
 }
 
 img{
-    width: 260px;
+    width: 250px;
     height: 350px;
     object-fit: cover;
     border-radius: 8%;

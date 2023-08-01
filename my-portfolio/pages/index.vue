@@ -10,7 +10,8 @@
             
             
                 <!-- A div wrapping the element is needed to make transitions work. Else, I'd need to use <transition-group> -->
-            <div :key="myComponent.__file" style="overflow: auto;">
+            <div :key="myComponent.__file" > 
+                 <!-- style="overflow: auto;"> -->
             
                 <component :is='myComponent' />
             

@@ -22,5 +22,9 @@ button{
     align-items: center;
     background-color: inherit;
     border: 0px;
+    z-index: 5;
+    padding: 3px;
+    position: relative;
+    width: fit-content;
 }
 </style>
