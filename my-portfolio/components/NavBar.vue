@@ -20,20 +20,20 @@
         
         <ul class="navbar-nav">
           <li class="nav-item">
-            <button class="nav-link" v-bind:class="{ 'selected': tab == 1 }" @click="$emit('changeComponent', shallowRef( MeMyselfAndI )); tab = 1">
-              Welcome
+            <button class="nav-link" title="Home" v-bind:class="{ 'selected': tab == 1 }" @click="$emit('changeComponent', shallowRef( MeMyselfAndI )); tab = 1">
+              <IconsHome />
             </button>
           </li>
           
           <li class="nav-item">
-            <button class="nav-link" v-bind:class="{ 'selected': tab == 2 }" @click="$emit('changeComponent', shallowRef( Interests )); tab = 2">
-              My interests
+            <button class="nav-link" title="Interests" v-bind:class="{ 'selected': tab == 2 }" @click="$emit('changeComponent', shallowRef( Interests )); tab = 2">
+              <IconsHeart />
             </button>
           </li>
           
           <li class="nav-item">
             <button class="nav-link" v-bind:class="{ 'selected': tab == 3 }" @click="$emit('changeComponent', shallowRef( Projects)); tab = 3">
-              Projects
+              <IconsCube />
             </button>
           </li>
         </ul>

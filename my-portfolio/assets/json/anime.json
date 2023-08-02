@@ -1,0 +1,42 @@
+[
+    {   "image":"https://cdn.myanimelist.net/images/anime/11/75274l.jpg", 
+        "alt": "化物語", 
+        "link":"https://myanimelist.net/anime/5081/Bakemonogatari"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/1871/109180l.jpg", 
+        "alt": "新世紀エヴァンゲリオン", 
+        "link":"https://myanimelist.net/anime/30/Neon_Genesis_Evangelion"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/8/77831l.jpg", 
+        "alt": "この素晴らしい世界に祝福を！", 
+        "link":"https://myanimelist.net/anime/30831/Kono_Subarashii_Sekai_ni_Shukufuku_wo"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/3/52675l.jpg", 
+        "alt": "N・H・Kにようこそ !", 
+        "link":"https://myanimelist.net/anime/1210/NHK_ni_Youkoso"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/1429/100628l.jpg", 
+        "alt": "3月のライオン", 
+        "link":"https://myanimelist.net/anime/35180/3-gatsu_no_Lion_2nd_Season"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/13/50521l.jpg", 
+        "alt": "氷菓", 
+        "link":"https://myanimelist.net/anime/12189/Hyouka"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/1786/120117l.jpg", 
+        "alt": "やはり俺の青春ラブコメはまちがっている", 
+        "link":"https://myanimelist.net/anime/14813/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/anime/1417/117422l.jpg", 
+        "alt": "残響のテロル", 
+        "link":"https://myanimelist.net/anime/23283/Zankyou_no_Terror"
+    }
+    
+]

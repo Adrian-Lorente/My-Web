@@ -17,5 +17,21 @@
     {   "image":"https://cdn.myanimelist.net/images/manga/2/152911.jpg", 
         "alt": "ザファブル", 
         "link":"https://myanimelist.net/manga/87844/The_Fable"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/manga/5/251209l.jpg", 
+        "alt": "君は放課後インソムニア", 
+        "link":"https://myanimelist.net/manga/121213/Kimi_wa_Houkago_Insomnia"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/manga/3/250732l.jpg", 
+        "alt": "ダンダダン", 
+        "link":"https://myanimelist.net/manga/135496/Dandadan"
+    },
+
+    {   "image":"https://cdn.myanimelist.net/images/manga/1/278020l.jpg", 
+        "alt": "GANTZ", 
+        "link":"https://myanimelist.net/manga/564/Gantz"
     }
+    
 ]
