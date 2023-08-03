@@ -7,7 +7,7 @@
     --margin-topbot: 20px;
     --def-pad:40px;
     --my-font:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    --my-font-p-size: 1.2rem;
+    --my-font-p-size: 1rem;
 }
 html, body, #__nuxt{
     width: 100%;

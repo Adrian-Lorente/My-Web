@@ -1,5 +1,12 @@
 <template>
     <!-- Everything's wrapped under a containter fluid, centered, with outer border -->
+        <Head>
+            <Title>
+                Adrián Lorente González
+            </Title>
+
+            
+        </Head>
     
         <div class="container-fluid p-5 d-flex flex-column justify-content-center w-100 outerBorder">
         
