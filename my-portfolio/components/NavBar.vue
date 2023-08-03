@@ -4,41 +4,88 @@
     const Hobbies = resolveComponent("ContentHobbies");
     const Interests = resolveComponent("ContentInterests");
     const Projects = resolveComponent("ContentProjects");
+    const AboutMe = resolveComponent("ContentAboutMe");
 </script>
 
 <template>
     
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       
-      <!-- Expand button -->          
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Expand button -->          
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNavAltMarkup" 
+                aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          
+            <span class="navbar-toggler-icon">
 
-      <!-- Navigation bar. Collapses wen it reaches less than 768px width (set in navbar-expand-md class above) -->
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            </span>
         
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <button class="nav-link" title="Home" v-bind:class="{ 'selected': tab == 1 }" @click="$emit('changeComponent', shallowRef( MainPage )); tab = 1">
-              <IconsHome />
-            </button>
-          </li>
+        </button>
+
+        <!-- Navigation bar. Collapses wen it reaches less than 768px width (set in navbar-expand-md class above) -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           
-          <li class="nav-item">
-            <button class="nav-link" title="Interests" v-bind:class="{ 'selected': tab == 2 }" @click="$emit('changeComponent', shallowRef( Interests )); tab = 2">
-              <IconsHeart />
-            </button>
-          </li>
+            <ul class="navbar-nav">
+              
+                <li class="nav-item">
+                  
+                  <button class="nav-link" 
+                          title="Home" 
+                          v-bind:class="{ 'selected': tab == 1 }" 
+                          @click="$emit('changeComponent', shallowRef( MainPage )); tab = 1">
+                    
+                    <IconsHome />
+                  
+                  </button>
+                
+                </li>
+              
+                <li class="nav-item">
+                  
+                  <button class="nav-link" 
+                          title="Interests" 
+                          v-bind:class="{ 'selected': tab == 2 }" 
+                          @click="$emit('changeComponent', shallowRef( Interests )); tab = 2">
+                    
+                    <IconsHeart />
+                  
+                  </button>
+                
+                </li>
+              
+                <li class="nav-item">
+                  
+                  <button class="nav-link" 
+                          title="Projects" 
+                          v-bind:class="{ 'selected': tab == 3 }" 
+                          @click="$emit('changeComponent', shallowRef( Projects)); tab = 3">
+                    
+                    <IconsCube />
+                  
+                  </button>
+                
+                </li>
+
+                <li class="nav-item">
+                  
+                  <button class="nav-link" 
+                          title="About me & Contact" 
+                          v-bind:class="{ 'selected': tab == 4 }" 
+                          @click="$emit('changeComponent', shallowRef( AboutMe)); tab = 4">
+                    
+                    <IconsAboutMeAndContact />
+                  
+                  </button>
+                
+                </li>
+
+            </ul>
           
-          <li class="nav-item">
-            <button class="nav-link" title="Projects" v-bind:class="{ 'selected': tab == 3 }" @click="$emit('changeComponent', shallowRef( Projects)); tab = 3">
-              <IconsCube />
-            </button>
-          </li>
-        </ul>
-        
-      </div>
+        </div>
       
     </nav>
 
