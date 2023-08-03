@@ -90,12 +90,58 @@
 
         </section>
 
+        <!-- ···························· -->
+        <!-- GAMES SECTION -->
+        <!-- ···························· -->
+        
+        <section class="row m-0">
+                
+                <div class="container innerContent d-flex flex-column align-items-center p-5 gap-4">
+                        
+                        <div class="h1">
+                            Videogames
+                        </div>
+        
+                        <div class="container d-flex align-items-center justify-content-between">
+                            
+                                <IconsLeftArrow @press=" function myfunc () { games_offset = (games_offset + 1) % games_lenght ; }" />
+                                
+                                <!-- Manga carousel -->
+                                <div class="carousel">
+                                    
+                                    <div class="carousel-item" v-for="item in games" :class = "[  item == games[games_offset] ? 'item-1' : // offset is alwas left item in carousel 
+                                                      item == games[(games_offset + 1) % games_lenght] ? 'item-2' :  // manga_offset + 1 mod(lenth) is always center item in carousel
+                                                      item == games[(games_offset + 2) % games_lenght] ? 'item-3' : 'item-0']"> 
+                                    
+                                        <a :href="item.link" target="_blank">
+                                    
+                                            <img :src="item.image" 
+                                                 :alt="item.alt"
+                                                 :title="item.alt">
+                                    
+                                        </a>
+                                
+                                    </div>
+
+                                </div>
+
+                                <IconsRightArrow @press=" function myfunc () { games_offset == 0 ? 
+                                                                          games_offset = games_lenght - 1 : 
+                                                                          games_offset = (games_offset - 1) % games_lenght ; }" />
+
+                        </div>
+                    
+                </div>
+
+        </section>
+        
 </template>
 
 
 <script>
 import manga from "assets/json/manga.json";
 import anime from "assets/json/anime.json";
+import games from "assets/json/videogames.json";
 // Tabbed template for adding manga to manga.json.
 // {   "image":"", 
 //     "alt": "", 
@@ -111,7 +157,11 @@ export default {
 
             anime,
             anime_offset: 0,
-            anime_lenght: anime.length
+            anime_lenght: anime.length,
+
+            games,
+            games_offset:0,
+            games_lenght: games.length
         }
     }
 }

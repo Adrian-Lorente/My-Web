@@ -24,6 +24,7 @@
             <!-- <Footer /> -->
     
         </div>
+
 </template>
 
 <script>
@@ -33,10 +34,11 @@
     export default{
         data() {
             return {
-                myComponent:  shallowRef( resolveComponent("ContentMeMyselfAndI") )
+                myComponent:  shallowRef( resolveComponent("ContentMainPage") )
             }
         }
     }
+    
 </script>
 
 

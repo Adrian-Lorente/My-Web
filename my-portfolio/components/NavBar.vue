@@ -1,6 +1,6 @@
 <script setup>
     // Resolving the components to display them dynamically depending on whatever the user clicks at the header
-    const MeMyselfAndI = resolveComponent("ContentMeMyselfAndI");
+    const MainPage = resolveComponent("ContentMainPage");
     const Hobbies = resolveComponent("ContentHobbies");
     const Interests = resolveComponent("ContentInterests");
     const Projects = resolveComponent("ContentProjects");
@@ -20,7 +20,7 @@
         
         <ul class="navbar-nav">
           <li class="nav-item">
-            <button class="nav-link" title="Home" v-bind:class="{ 'selected': tab == 1 }" @click="$emit('changeComponent', shallowRef( MeMyselfAndI )); tab = 1">
+            <button class="nav-link" title="Home" v-bind:class="{ 'selected': tab == 1 }" @click="$emit('changeComponent', shallowRef( MainPage )); tab = 1">
               <IconsHome />
             </button>
           </li>
@@ -32,7 +32,7 @@
           </li>
           
           <li class="nav-item">
-            <button class="nav-link" v-bind:class="{ 'selected': tab == 3 }" @click="$emit('changeComponent', shallowRef( Projects)); tab = 3">
+            <button class="nav-link" title="Projects" v-bind:class="{ 'selected': tab == 3 }" @click="$emit('changeComponent', shallowRef( Projects)); tab = 3">
               <IconsCube />
             </button>
           </li>
@@ -48,11 +48,9 @@
 <style scoped>
 
 button , button:hover{
-  background-color: inherit;
-  margin: inherit;
-  color: white;
-  border: 0px;
-  position: relative;
+    margin: inherit;
+    color: white;
+    position: relative;
 }
 
 button::after, .selected::after{
@@ -60,11 +58,11 @@ button::after, .selected::after{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px 20px;
+    border-radius: 50%;
     content:'';
     top: 0px;
     left: 0px;
-    box-shadow: 0 0 0 2px #fffc43;
+    box-shadow: 0 0 0 2px var(--my-yellow);;
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -webkit-transform: scale(.8);
     -moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -90,13 +88,21 @@ button:hover::after, .selected:hover::after{
 }
 
 .navbar-nav{
-  gap: 15px;
+  gap: 30px;
+  background-color: var(--bg-inner-content);
+  border-radius: 20px 20px;
+  padding: 5px 10px 5px 10px;
 }
 
 .selected{
-  background-color: #fffc43;
+  background-color: var(--my-yellow);
   color: black;
-  border-radius: 10px 20px;
+  border-radius: 50%;
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
 }
 
 </style>

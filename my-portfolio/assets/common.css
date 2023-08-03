@@ -1,6 +1,7 @@
 :root{
     --bg-myblack : #171b1f;
     --bg-inner-content: #21272e;
+    --my-yellow: #fffc43;
     --textcolor: white;
     --title-color: white;
     --margin-topbot: 20px;
@@ -18,9 +19,10 @@ html, body, #__nuxt{
     overflow-y: hidden; */
 }
 
-.navbar{
+/* To make the navbar background transparent */
+/* .navbar{
     background-color: var(--bg-myblack);
-}
+} */
 
 .navbar-collapse{
     justify-content: center;

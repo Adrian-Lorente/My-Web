@@ -11,7 +11,8 @@
                                  alt="mobu" 
                                  style="width: 124px; 
                                         height: 124px; 
-                                        border-radius: 50%;">
+                                        border-radius: 50%;"
+                                 title="GitHub Link">
                         
                         </a>
                 
@@ -31,7 +32,7 @@
             </div>
 
             <p align="center" class="text" id="my-text">
-                I'm creating this site as my personal space, where I share my hobbies, interests and proyects.
+                I'm creating this site as my personal space, where I share my interests and projects.
             </p>
             
         </section>
