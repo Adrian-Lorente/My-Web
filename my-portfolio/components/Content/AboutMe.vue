@@ -68,55 +68,122 @@
                 </div>
 
                 <p class="text">
-                    In programming:
-
-                    <ul class="ul">
-
-                        <li class="text p-0">
-                            Python 3.+:
-                        </li>
-
-                        <li class="text p-0">
-                            C: 
-                        </li>
-
-                        <li class="text p-0">
-                            C++: 
-                        </li>
-
-                        <li class="text p-0">
-                            PL/SQL: 
-                        </li>
-
-                        <li class="text p-0">
-                            HTML, CSS, JS (plain): 
-                        </li>
                     
-                        <li class="text p-0">
-                            Vue.js, Nuxt3: 
-                        </li>
-
-                    </ul>
-
+                    In programming:
+                
                 </p>
+
+                <ul class="ul">
+
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                        
+                        <div class="text col">
+                            
+                            Py 3.+:
+
+                        </div>
+
+                        <progress class="col" max="100" value="80"></progress>                            
+
+                    </li>
+
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                        
+                        <div class="text col">
+
+                            C: 
+
+                        </div>
+
+                        <progress class="col" max="100" value="40"></progress>   
+
+                    </li>
+
+                    <li class="d-flex justify-content-left align-items-center p-0">
+                        
+                        <div class="text col">
+                            
+                            C++:
+                        
+                        </div> 
+
+                        <progress class="col" max="100" value="25"></progress>   
+
+                    </li>
+
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                        
+                        <div class="text col">
+                            
+                            PL/SQL:
+
+                        </div>
+
+                        <progress class="col" max="100" value="40"></progress>   
+
+                    </li>
+
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                    
+                        <div class="text col">
+                            
+                            HTML, CSS, JS (plain):
+
+                        </div>
+
+                        <progress class="col" max="100" value="75"></progress>   
+
+                    </li>
+                
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                        
+                        <div class="text col">
+                            
+                            Vue.js, Nuxt3: 
+
+                        </div>
+
+                        <progress class="col" max="100" value="60"></progress>   
+
+                    </li>
+
+                </ul>
+
 
                 <p class="text">
 
                     In languages:
-
-                    <ul>
-
-                        <li class="text p-0">
-                            English:
-                        </li>
-
-                        <li class="text p-0">
-                            Japanese:
-                        </li>
-
-                    </ul>
-
+                
                 </p>
+
+                <ul>
+
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                        
+                        <div class="text col">
+                            
+                            English:
+
+                        </div>
+
+                        <progress class="col" max="100" value="80"></progress>   
+
+                    </li>
+
+
+                    <li class="d-flex justify-content-left align-items-center text p-0">
+                        
+                        <div class="text col">
+                            
+                            Japanese:
+
+                        </div>
+
+                        <progress class="col" max="100" value="10"></progress>   
+
+                    </li>
+
+                </ul>
 
             </div>
 
@@ -164,6 +231,44 @@ button{
 
 #clipboard-alert{
     visibility: hidden;
+}
+
+progress{
+    accent-color: var(--my-yellow);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    animation: 1s ease loadProgressBars;
+
+    
+}
+
+progress[value]::-webkit-progress-bar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-moz-progress-bar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--my-yellow);
+    animation: 1s ease loadProgressBars;
+}
+
+progress[value]::-moz-progress-value {
+    background-color: var(--my-yellow);
+    animation: 1s ease loadProgressBars;
+}
+
+@keyframes loadProgressBars {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 </style>
