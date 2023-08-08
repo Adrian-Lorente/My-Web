@@ -1,7 +1,6 @@
 <script setup>
     // Resolving the components to display them dynamically depending on whatever the user clicks at the header
     const MainPage = resolveComponent("ContentMainPage");
-    const Hobbies = resolveComponent("ContentHobbies");
     const Interests = resolveComponent("ContentInterests");
     const Projects = resolveComponent("ContentProjects");
     const AboutMe = resolveComponent("ContentAboutMe");

@@ -51,3 +51,22 @@ section{
     box-shadow: 0px 5px 10px rgb(0 0 0 / 0.2);
     max-width: 1200px;
 }
+
+
+@media (max-width: 1200px){
+    .text{
+        font-size: 1.6vw;
+    }
+}
+
+@media(max-width: 768px){
+    .text{
+        font-size: calc(.5rem + 1vw);
+    }
+}
+
+@media(max-width: 608px){
+    .h1{
+        font-size: calc(1rem + 1vw);
+    }
+}

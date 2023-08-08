@@ -5,7 +5,7 @@
                 <div class="container innerContent d-flex align-items-center justify-content-center p-4 gap-4">
                     
                         <!-- Text to the left & image to the right -->
-                        <div>
+                        <div class="w-100">
                             
                             <div class="h1">
                                 My website
@@ -20,7 +20,8 @@
                         <a href="https://github.com/Adrian-Lorente/My-Web">
                             
                             <img src="~/assets/images/website_placeholder.png" 
-                                    alt="my_website_image">
+                                  alt="my_website_image"
+                                  title="My website">
                         
                         </a>
                 
@@ -33,13 +34,16 @@
                 <div class="container innerContent d-flex align-items-center justify-content-center p-4 gap-4">
                     
                         <!-- Text to the right & image to the left -->
-                        <div>
+                        <div class="w-100">
                             
                             <div class="h1">
+
                                 The skyfall
+
                             </div>
                             
                             <p class="text">
+
                                 Started at 3/6/2023. My friends and I are big videogame fans so we decided to learn about it 
                                 and create our own videogame from scratch, as long as that summer lasted. 
                                 <br><br>
@@ -47,12 +51,17 @@
                                 Not only we coded the game, but also wrote the story, made the concept arts, character design, level design, music...
                                 <br><br>
                                 Built it using Unity Engine and C# for sripting. Character lines and dialogues were made using Ink.
+
                             </p>
                         
                         </div>
 
                         <a href="https://github.com/Adrian-Lorente/VideogameProyect">
-                            <img src="~/assets/images/website_placeholder.png" alt="my_website_image">
+
+                            <img src="~/assets/images/website_placeholder.png" 
+                                  alt="videogame_project_image" 
+                                  title="My videogame">
+                                  
                         </a>
                 
                 </div>
@@ -64,8 +73,8 @@
 <style scoped>
 
 img {
-    width: 12rem;
-    height: auto;
+    width: 80%;
+    height: 80%;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
     transition: all .5s ease;
 }
@@ -75,6 +84,6 @@ img:hover{
 }
 
 .innerContent{
-    max-width: 800px;
+    max-width: 1000px;
 }
 </style>

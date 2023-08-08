@@ -6,13 +6,13 @@
         
         <section class="row m-0">
                 
-                <div class="container innerContent d-flex flex-column align-items-center p-5 gap-4">
+                <div class="container-fluid innerContent d-flex flex-column align-items-center p-5 gap-4">
                         
                         <div class="h1">
                             Manga
                         </div>
         
-                        <div class="container d-flex align-items-center justify-content-between">
+                        <div class="container-fluid d-flex align-items-center justify-content-between">
                             
                                 <IconsLeftArrow @press=" function myfunc () { manga_offset = (manga_offset + 1) % manga_lenth ; }" />
                                 
@@ -51,13 +51,13 @@
 
         <section class="row m-0">
                 
-                <div class="container innerContent d-flex flex-column align-items-center p-5 gap-4">
+                <div class="container-fluid innerContent d-flex flex-column align-items-center p-5 gap-4">
                         
                         <div class="h1">
                             Anime
                         </div>
         
-                        <div class="container d-flex align-items-center justify-content-between">
+                        <div class="container-fluid d-flex align-items-center justify-content-between">
                             
                                 <IconsLeftArrow @press=" function myfunc () { anime_offset = (anime_offset + 1) % anime_lenght ; }" />
                                 
@@ -96,13 +96,13 @@
         
         <section class="row m-0">
                 
-                <div class="container innerContent d-flex flex-column align-items-center p-5 gap-4">
+                <div class="container-fluid innerContent d-flex flex-column align-items-center p-5 gap-4">
                         
                         <div class="h1">
                             Videogames
                         </div>
         
-                        <div class="container d-flex align-items-center justify-content-between">
+                        <div class="container-fluid d-flex align-items-center justify-content-between">
                             
                                 <IconsLeftArrow @press=" function myfunc () { games_offset = (games_offset + 1) % games_lenght ; }" />
                                 
@@ -173,10 +173,6 @@ export default {
     max-width: 1000px;
 }
 
-.container > * {
-    max-width: 100%;
-}
-
 .carousel {
     position: relative;
     width: fit-content;
@@ -239,4 +235,46 @@ img:hover{
     transform: scale(1.06);
 }
 
+
+@media (max-width: 1200px){
+    img{
+        width: 150px;
+        height: 250px;
+    }
+
+    .innerContent{
+        max-width: 800px;
+        padding: 25px !important;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .row{
+        padding: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    img{
+        width: 100px;
+        height: 200px;
+    }
+
+    .item-1{
+        transform: translateX(120%) rotate3d(0, 0.3, -0.1, 20deg);
+    }
+
+    .item-3{
+        transform: translateX(-120%) rotate3d(0, 0.3, -0.1, -20deg);
+    }
+}
+
+@media(max-width: 608px){
+    img{
+        width: 80px;
+        height: 160px
+    };
+}
 </style>
