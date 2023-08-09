@@ -23,6 +23,9 @@
                     <br>
                     <br>
                     Interested in <span>Web, Software and Videogames Development</span>, as well as <span>Machine Learning and AI</span>.
+                    <br>
+                    <br>
+                    Also, I'm a selft-taught japanese learner. I still have a beginner level, which I expect to improve with time and effort.
 
                 </p>
 
@@ -32,7 +35,7 @@
             <!-- CENTER -->
             <!-- ···························· -->
 
-            <div class="col mx-4 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="col mx-0 h-100 d-flex flex-column align-items-center justify-content-center">
 
                 <figure>
 
@@ -268,6 +271,12 @@ progress[value]::-moz-progress-value {
     }
     100%{
         opacity: 1;
+    }
+}
+
+@media(max-width: 768px){
+    .innerContent{
+        flex-direction: column;
     }
 }
 

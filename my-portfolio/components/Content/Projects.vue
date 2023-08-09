@@ -2,7 +2,7 @@
         
         <section class="row m-0">
             
-                <div class="container innerContent d-flex align-items-center justify-content-center p-4 gap-4">
+                <div class="container-fluid innerContent d-flex align-items-center justify-content-center p-4 gap-4">
                     
                         <!-- Text to the left & image to the right -->
                         <div class="w-100">
@@ -31,7 +31,7 @@
 
         <section class="row m-0">
             
-                <div class="container innerContent d-flex align-items-center justify-content-center p-4 gap-4">
+                <div class="container-fluid innerContent d-flex align-items-center justify-content-center p-4 gap-4">
                     
                         <!-- Text to the right & image to the left -->
                         <div class="w-100">
@@ -77,6 +77,7 @@ img {
     height: 80%;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
     transition: all .5s ease;
+    border-radius: 20px;
 }
 
 img:hover{
@@ -85,5 +86,11 @@ img:hover{
 
 .innerContent{
     max-width: 1000px;
+}
+
+@media(max-width: 768px){
+    .innerContent{
+        flex-direction: column;
+    }
 }
 </style>

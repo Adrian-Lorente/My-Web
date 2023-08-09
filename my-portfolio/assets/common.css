@@ -19,6 +19,11 @@ html, body, #__nuxt{
     background-color: var(--bg-myblack);
 }
 
+a{
+    width: fit-content;
+    height: fit-content;
+}
+
 /* Setting standard margins and paddings between sections */
 section{
     margin-top: var(--margin-topbot);
