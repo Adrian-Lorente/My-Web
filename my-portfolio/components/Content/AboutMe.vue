@@ -25,7 +25,7 @@
                     Interested in <span>Web, Software and Videogames Development</span>, as well as <span>Machine Learning and AI</span>.
                     <br>
                     <br>
-                    Also, I'm a selft-taught japanese learner. I still have a beginner level, which I expect to improve with time and effort.
+                    Also, I'm a <span>selft-taught japanese learner</span>. I still have a beginner level, which I expect to improve with time and effort.
 
                 </p>
 
@@ -98,7 +98,7 @@
 
                         </div>
 
-                        <progress class="col" max="100" value="40"></progress>   
+                        <progress class="col" max="100" value="50"></progress>   
 
                     </li>
 
@@ -122,7 +122,7 @@
 
                         </div>
 
-                        <progress class="col" max="100" value="40"></progress>   
+                        <progress class="col" max="100" value="25"></progress>   
 
                     </li>
 
