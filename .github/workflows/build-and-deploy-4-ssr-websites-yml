@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 env:
-  BUILD_FOLDER: .output/public # or .output/public/yourrepositoryname/
+  BUILD_FOLDER: .output/public/My-Web/ # .output/public or .output/public/yourrepositoryname/
   NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
 jobs:
   build-and-deploy-no-ssr:
