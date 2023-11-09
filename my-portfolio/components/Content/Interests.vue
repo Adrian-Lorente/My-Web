@@ -1,6 +1,40 @@
 <template>
         
         <!-- ···························· -->
+        <!-- INTRO SECTION -->
+        <!-- ···························· -->
+        
+        <section class="row m-0">
+                
+                <div class="container-fluid innerContent d-flex flex-column align-items-center p-5 gap-4">
+                        
+                        <div class="h1">
+                            My hobbies
+                        </div>
+        
+                        <div class="container-fluid d-flex align-items-center justify-content-between">
+                            
+                            <div class="my-text text">
+                            
+                                 When I'm not programming or studying, I spend my free time mostly 
+                                 playing <span>videogames</span> or reading <span>manga</span>. I also enjoy watching <span>anime</span>, 
+                                 though I don't really have as much time and momentum to do it as I used to.
+                                 Also, I like reading normal books but I don't really have a list of favourites.
+
+                                 <br>
+                                 <br>
+
+                                 In this section, I want to share some of my all time favourites in each category in a somewhat fancy way.
+                        
+                            </div>
+                        
+                        </div>
+                    
+                </div>
+
+        </section>
+        
+        <!-- ···························· -->
         <!-- MANGA SECTION -->
         <!-- ···························· -->
         

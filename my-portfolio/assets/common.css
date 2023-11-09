@@ -24,6 +24,10 @@ a{
     height: fit-content;
 }
 
+span{
+    color: var(--my-yellow);
+}
+
 /* Setting standard margins and paddings between sections */
 section{
     margin-top: var(--margin-topbot);

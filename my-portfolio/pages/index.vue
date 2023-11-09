@@ -2,7 +2,7 @@
     <!-- Everything's wrapped under a containter fluid, centered, with outer border -->
         <Head>
             <Title>
-                Adrián Lorente González
+                Adrián Lorente
             </Title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0">

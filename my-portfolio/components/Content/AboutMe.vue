@@ -22,7 +22,7 @@
                     I'm currently in my last year of a Bachelor in <span>Computer Science & Engineering</span> in Spain, but I'm planning on doing a <span>master's degree</span>.
                     <br>
                     <br>
-                    Interested in <span>Web, Software and Videogames Development</span>, as well as <span>Machine Learning and AI</span>.
+                    Interested in <span>Web, Software and Videogames Development</span>, as well as <span>Machine Learning and AI</span>, specifically in the field of Computer Vision.
                     <br>
                     <br>
                     Also, I'm a <span>selft-taught japanese learner</span>. I still have a beginner level, which I expect to improve with time and effort.
@@ -46,11 +46,11 @@
                 </figure>
 
                 <div class="h1 w-100 d-flex justify-content-center gap-5">
-                    <a href="https://github.com/Adrian-Lorente" target="_blank">
-                        <IconsGitHub />
+                    <a href="https://github.com/Adrian-Lorente" target="_blank" title="My Github page">
+                        <IconsGitHub/>
                     </a>
                     
-                    <button class="button" @click="copyMail">
+                    <button class="button" @click="copyMail" title="Copy my e-mail to clipboard">
                         <IconsMail />
                     </button>
                 </div>
@@ -200,10 +200,10 @@
 <script setup>
     function copyMail() {
         navigator.clipboard.writeText('adrn.lorente@gmail.com');
-        document.getElementById("clipboard-alert").style.visibility = 'visible';
+        document.getElementById("clipboard-alert").style.display = 'block';
         
         setTimeout(function () {
-            document.getElementById("clipboard-alert").style.visibility = 'hidden';
+            document.getElementById("clipboard-alert").style.display = 'none';
         }, 2000)
         
         return;
@@ -221,11 +221,6 @@ img{
     border-radius: 20px;
 }
 
-
-span{
-    color: var(--my-yellow);
-}
-
 button{
     border: 0px;
     z-index: 5;
@@ -233,7 +228,7 @@ button{
 }
 
 #clipboard-alert{
-    visibility: hidden;
+    display: none;
 }
 
 progress{

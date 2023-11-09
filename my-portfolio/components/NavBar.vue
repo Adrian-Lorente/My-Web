@@ -10,7 +10,7 @@
     
     <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex align-items-center justify-content-center">
 
-        <!-- Navigation bar. Collapses wen it reaches less than 768px width (set in navbar-expand-md class above) -->
+        <!-- Navigation bar. Collapses wen it reaches less than 768px width (set by default in class navbar-expand-md above) -->
         <ul class="navbar-nav flex-row">
           
             <li class="nav-item">
