@@ -39,7 +39,7 @@
 
                 <figure>
 
-                    <img src="~/assets/images/website_placeholder.png" 
+                    <img src="~/assets/images/mob.jpg" 
                          alt="my_picture"
                          title="Me (*^▽^*)">
 
