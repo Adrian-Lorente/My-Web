@@ -7,8 +7,9 @@ permissions:
   contents: write
 env:
   BUILD_FOLDER: .output/public # or .output/public/yourrepositoryname/
+  NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
 jobs:
-  build:
+  build-and-deploy-no-ssr:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     strategy:
@@ -18,11 +19,10 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@v3
 
-    - name: Generate static Nuxt 3 files
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: "16"
-        cache: 'npm'
+        node-version: ${{ matrix.node-version }}
   
     - run: |
         npm ci
