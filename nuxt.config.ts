@@ -8,7 +8,9 @@ export default defineNuxtConfig({
     ssr: true, //server side rendered enabled //When true
     target: "static", // and static, nuxt generates a hybrid static site
     // To deploy in GH pages
-
+    router: {
+      base: '/My-Web/'
+    }
     css: [
       'bootstrap/dist/css/bootstrap.min.css',
       '@/assets/common.css'
