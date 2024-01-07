@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     router: {
       base: '/My-Web/'
     },
-    
+
     css: [
       'bootstrap/dist/css/bootstrap.min.css',
       '@/assets/common.css'
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     app:{
       head:{
         link:[
-          {rel:"icon", type:"image/png", href:"/favicon.ico"}
+          {rel:"shortcut icon", type:"image/x-icon", href:"/favicon.ico"}
         ]
       },
       baseURL: "/My-Web/"
