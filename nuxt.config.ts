@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     // To deploy in GH pages
     router: {
       base: '/My-Web/'
-    }
+    },
+    
     css: [
       'bootstrap/dist/css/bootstrap.min.css',
       '@/assets/common.css'
