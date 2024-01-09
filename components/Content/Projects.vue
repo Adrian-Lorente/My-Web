@@ -12,13 +12,13 @@
                     
                     <div class="h1">
                     
-                        What (I'd like to do || I'm working on)
+                        Personal projects
                     
                     </div>
                     
                     <p class="text">
                     
-                        In this section, I'll post about the projects I'd like to complete or those I have started but not finished.
+                        This section will contain those projects that I can show. Both started at some point and already completed will be shown.
                     
                     </p>
                 
@@ -123,7 +123,7 @@
                 
                 </div>
 
-                <a href="https://www.kaggle.com/datasets/msambare/fer2013?rvi=1" target="_blank">
+                <a href="https://github.com/Adrian-Lorente/fer2013-challenge" target="_blank">
 
                     <img src="~/assets/images/fer.png" 
                             alt="fer_challenge_image" 
@@ -164,35 +164,6 @@
                             title="OCR"> -->
                             
                 </a>
-            
-            </div>
-    
-        </section>
-
-        <!-- ···························· -->
-        <!-- WHAT I HAVE DONE (AND CAN SHOW) -->
-        <!-- ···························· -->
-
-        <section class="row m-0">
-            
-            <div class="container-fluid innerContent d-flex align-items-center justify-content-center p-4 gap-4">
-                
-                <div class="w-100">
-                    
-                    <div class="h1">
-                    
-                        What I've done
-                    
-                    </div>
-                    
-                    <p class="text">
-                    
-                        In this section, I'll post about the projects I have already finished.
-                        This is yet to be filled with them, because up until now all I've been doing is University projects. 
-                    
-                    </p>
-                
-                </div>
             
             </div>
     

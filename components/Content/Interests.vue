@@ -24,7 +24,7 @@
                                  <br>
                                  <br>
 
-                                 In this section, I want to share some of my all time favourites in each category in a somewhat fancy way.
+                                 In this section, I want to share some of my all time favourites in each category in a somehow fancy way.
                         
                             </div>
                         
